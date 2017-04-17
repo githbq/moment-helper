@@ -1,0 +1,27 @@
+{
+    "name": "moment-helper",
+    "version": "0.0.1",
+    "description": "时间处理辅助库",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:githbq/moment-helper.git"
+    },
+    "keywords": [
+        "io",
+        "helper",
+        "es6"
+    ],
+    "author": "hubiqing",
+    "license": "MIT",
+    "bugs": {
+        "url": "git@github.com:githbq/moment-helper.git"
+    },
+    "homepage": "git@github.com:githbq/moment-helper.git#readme",
+    "dependencies": {
+        "moment": "^2.18.1"
+    }
+}
