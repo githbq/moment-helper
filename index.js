@@ -1,8 +1,8 @@
 /**
  * 日期操作
  */
-const moment = require('moment');
-const momentHelper = {
+var moment = require('moment');
+var momentHelper = {
     moment,
     formatType: {
         normal: 'YYYY-MM-DD HH:mm:ss',
@@ -11,17 +11,17 @@ const momentHelper = {
     },
     init() {
         moment.locale('zh-cn', {
-            meridiem: function(hour, minute, isLowercase) {
+            meridiem: function (hour, minute, isLowercase) {
                 if (hour < 9) {
-                    return "早上";
+                    return '早上';
                 } else if (hour < 11 && minute < 30) {
-                    return "上午";
+                    return '上午';
                 } else if (hour < 13 && minute < 30) {
-                    return "中午";
+                    return '中午';
                 } else if (hour < 18) {
-                    return "下午";
+                    return '下午';
                 } else {
-                    return "晚上";
+                    return '晚上';
                 }
             }
         });
